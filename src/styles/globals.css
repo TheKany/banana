@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+body {
+  background-color: #F3F2EF;
+  color: #424242;
+}
+
+/* 중앙 위치 */
+@utility position-center {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+
+@utility flex-center {
+  @apply flex flex-col justify-center align-middle
+}
+
+/* 기본 그림자 */
+@utility base-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
