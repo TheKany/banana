@@ -9,7 +9,7 @@ const ResultContainer = () => {
     rows: [
       {
         id: "십성-1",
-        title: { word: "十星", mean: "십성" },
+        title: { type: "title", word: "十星", mean: "십성" },
         result: [
           [{ type: "text", word: "傷官", mean: "상관" }],
           [{ type: "text", word: "比肩", mean: "비견" }],
@@ -19,7 +19,7 @@ const ResultContainer = () => {
       },
       {
         id: "천간",
-        title: { word: "天干", mean: "천간" },
+        title: { type: "title", word: "天干", mean: "천간" },
         result: [
           [{ type: "symbol", korean: "임", chinese: "壬", wordAttr: "陽水" }],
           [{ type: "symbol", korean: "정", chinese: "丁", wordAttr: "陰火" }],
@@ -29,7 +29,7 @@ const ResultContainer = () => {
       },
       {
         id: "지지",
-        title: { word: "地支", mean: "지지" },
+        title: { type: "title", word: "地支", mean: "지지" },
         result: [
           [{ type: "symbol", korean: "인", chinese: "寅", wordAttr: "陽木" }],
           [{ type: "symbol", korean: "사", chinese: "巳", wordAttr: "陰火" }],
@@ -39,7 +39,7 @@ const ResultContainer = () => {
       },
       {
         id: "십성-2",
-        title: { word: "十星", mean: "십성" },
+        title: { type: "title", word: "十星", mean: "십성" },
         result: [
           [{ type: "text", word: "比肩", mean: "비견" }],
           [{ type: "text", word: "劫財", mean: "겁재" }],
@@ -49,7 +49,7 @@ const ResultContainer = () => {
       },
       {
         id: "십이운성",
-        title: { word: "十二運星", mean: "십이운성" },
+        title: { type: "title", word: "十二運星", mean: "십이운성" },
         result: [
           [{ type: "text", word: "死", mean: "사" }],
           [{ type: "text", word: "帝旺", mean: "제왕" }],
@@ -59,7 +59,7 @@ const ResultContainer = () => {
       },
       {
         id: "십이신살",
-        title: { word: "十二神殺", mean: "(십이신살)" },
+        title: { type: "title", word: "十二神殺", mean: "(십이신살)" },
         result: [
           [{ type: "text", word: "劫殺", mean: "겁살" }],
           [{ type: "text", word: "地殺", mean: "지살" }],
@@ -69,7 +69,7 @@ const ResultContainer = () => {
       },
       {
         id: "귀인",
-        title: { word: "貴人", mean: "귀인" },
+        title: { type: "title", word: "貴人", mean: "귀인" },
         result: [
           [{ type: "text", word: "", mean: "" }],
           [{ type: "text", word: "", mean: "" }],
@@ -153,6 +153,7 @@ const ResultContainer = () => {
                   wordFz={12}
                   mean={row.title.mean}
                   meanFz={7.82}
+                  className="border-r border-r-black"
                 />
 
                 {row.result.map((cell, idx) => (

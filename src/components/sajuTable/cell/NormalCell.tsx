@@ -13,7 +13,7 @@ const NormalCell = ({
 
   return (
     <div
-      className={`flex flex-col items-center justify-center bg-white pt-1 pb-2 ${
+      className={`flex flex-col items-center justify-center pt-1 pb-2 ${
         className ?? ""
       }`}
     >

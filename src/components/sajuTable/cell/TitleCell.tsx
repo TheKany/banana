@@ -10,7 +10,7 @@ const TitleCell = ({
 }: Omit<Title, "type">) => {
   return (
     <div
-      className={`flex flex-col justify-center py-1 border-r border-black ${
+      className={`flex flex-col justify-center py-1 border-r border-black  ${
         className ?? ""
       }`}
     >
