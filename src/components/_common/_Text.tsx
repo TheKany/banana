@@ -11,7 +11,7 @@ const Text = ({ children, className, fz }: Props) => {
     <span
       className={`text-center tracking-tight ${className ?? ""}`}
       style={{
-        fontSize: `clamp(${fz - 1}px, ${(fz / 375) * 100}vw, ${fz + 2}px)`,
+        fontSize: `clamp(${fz - 5}px, ${(fz / 375) * 100}vw, ${fz + 2}px)`,
       }}
     >
       {children}
