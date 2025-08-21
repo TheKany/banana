@@ -5,7 +5,7 @@ import Head from "next/head";
 export default function App({ Component, pageProps }: AppProps) {
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://banana-fawn.vercel.app/";
-  const contentSrc = `${siteUrl}/img/contents-01.webp`;
+  const contentSrc = `${siteUrl}/img/contents-01.png`;
   return (
     <>
       <Head>
