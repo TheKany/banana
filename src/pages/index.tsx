@@ -23,7 +23,7 @@ export default function Home() {
       <Contents
         className="-translate-y-[20%] z-10"
         src="/img/contents-03.webp"
-        alt="제 1장 로딩 이미지"
+        alt="제 1장 결과 이미지"
       >
         <Text className="absolute left-[15.5%] top-[13%]" fz={16}>
           제가 ㅇㅇ님의 사주를
@@ -32,10 +32,8 @@ export default function Home() {
         </Text>
       </Contents>
 
-      {/* 결과 이미지 */}
+      {/* 결과 표 */}
       <ResultContainer />
     </Container>
   );
 }
-
-// #2B557E : pri_navy
